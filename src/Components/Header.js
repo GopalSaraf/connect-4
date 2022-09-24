@@ -1,4 +1,3 @@
-import React from 'react';
 import { IS_GAME_PLAYING, IS_GAME_WIN, IS_GAME_DRAW } from '../constants'
 
 const Header = ({ currentPlayer, gameWinner, gameState }) => {

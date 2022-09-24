@@ -1,4 +1,3 @@
-
 export const CIRCLE_COUNT = 16
 
 export const NO_PLAYER = 0;

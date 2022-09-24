@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import GameCircle from './GameCircle';
 import Header from './Header';
 import Footer from './Footer';

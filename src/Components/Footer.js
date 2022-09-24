@@ -1,4 +1,3 @@
-import React from 'react';
 import { IS_GAME_PLAYING } from '../constants';
 
 const Footer = ({ onNewGameClicked, onSuggestMove, gameState }) => {

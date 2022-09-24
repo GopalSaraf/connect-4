@@ -1,9 +1,4 @@
-import React from 'react';
 import '../game.css';
-
-const onClick = (id) => {
-    alert('Click ' + id);
-}
 
 const GameCircle = (props) => {
     return (
