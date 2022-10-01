@@ -72,7 +72,7 @@ const twoStepsAhead = (currentPlayer, gameBoard) => {
         let board = [...gameBoard];
         board[availablePositions[i]] = currentPlayer;
         for (let j = 0; j < availablePositions.length; j++) {
-            if (i == j) continue;
+            if (i === j) continue;
             if (isWinner(board, currentPlayer, availablePositions[j]))
                 return availablePositions[j];
         }
@@ -87,11 +87,11 @@ const threeStepsAhead = (currentPlayer, gameBoard) => {
         let nextBoard = [...gameBoard];
         nextBoard[availablePositions[i]] = currentPlayer;
         for (let j = 0; j < availablePositions.length; j++) {
-            if (j == i) continue;
+            if (j === i) continue;
             let nextNextBoard = [...nextBoard];
             nextNextBoard[availablePositions[j]] = nextPlayer;
             for (let k = 0; k < availablePositions.length; k++) {
-                if (k == j) continue;
+                if (k === j) continue;
                 if (isWinner(nextNextBoard, nextPlayer, availablePositions[k]))
                     return availablePositions[k];
             }
